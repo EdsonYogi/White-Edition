@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input, button {
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+  }
+
+body {
+    background-color: white;
+
+ }
+
+.container {
+    width: 100%;
+    color: #444444;
+    font-family: "Open Sans", sans-serif;
+    font-weight: lighter;
+ }
+
+.menu {
+    background-color: #1D1D1D;
+    text-align: right;
+    padding: 15px;
+ }
+ 
+.menu .item {
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+    margin-right: 45px;
+    font-size: 10px;
+    letter-spacing: 2px;
+ }
+ 
+a.item1 {
+    color: #666;
+}
+.menu .item:hover {
+    color: #666;
+ }
+
+.title {
+    max-height: 300px;
+    text-align:center;
+    padding: 50px 0 50px 0;
+    color: white;
+    background-image: url("bgwork.jpg");
+    background-size: contain;
+    font-size: 30px;
+}
+
+.title h4 {
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    text-align:center;
+    margin: 30px;
+    font-size: 25px;
+}
+
+.content {
+    max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: darkgray;
+    padding: 50px 0px 50px 0px;
+}
+
+.text {
+    padding: 0px 10px 0px 10px;
+    width: 33.33%;
+    text-align: justify;
+    font-size: 13px;
+    line-height: 22px;
+    margin: 0 auto;
+}
+
+.text h3 {
+    font-size: 20px;
+}
+
+.text a {
+    display: block;
+    padding-top: 10px;
+    color:#e00966;
+    cursor: pointer;
+}
+
+.text a:hover {
+    color:#444444;
+}
+
+.copyright {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #444444;
+    padding: 10px 0 10px 0;
+}
+
+.copyright a {
+    color: #444444;
+}
+
+.copyright a:hover {
+    color: #e00966;
+}
+
+::selection {
+    color: #e00966;
+}
+
+/*WORKS*/
+
+.content .projet {
+    display: flex;
+    margin: 0 auto;
+}
+
+/*CONTACT*/
+
+.message {
+    width: 492px;
+    height: 143px;
+    resize: none;
+    padding: 19px 13px 14px 50px;
+    margin-right: 20px;
+    float: left;
+    background-image: url(crayon.png);
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: 15px 15px;
+}
+
+.email {
+    width: 423px;
+    height: 40px;
+    padding: 13px 13px 13px 51px;
+    margin-bottom: 20px;
+    background-image: url(email.png);
+    background-repeat: no-repeat;
+    background-size: 23px;
+    background-position: 15px 10px;
+    border: 1px solid darkgray;
+}
+
+.button {
+    width: 423px;
+    height: 82px;
+    background-color: #e00966;
+    font-size: 20px;
+    color: #FFF;
+}
+
+/*RESPONSIVE*/
+
+
+@media screen and (max-width: 1024px) {
+    .menu .item {
+        width: 30%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+     }
+
+    .title {
+        padding: 30px 0 30px 0;
+        font-size: 12.5px;
+    }
+
+    .subtitle {
+        margin: 20px;
+        font-size: 10px;
+    }
+
+    .content {
+        display: block;
+        padding: 20px;
+    }
+
+    /*RESPONSIVE ABOUT*/
+
+    .text {
+        width: 90%;
+    }
+
+    .text h3  {
+        text-align: center;
+    }
+
+    .text a {
+        margin-bottom: 10px;
+    }
+    .copyright {
+    text-align: center;
+    }
+
+    /*RESPONSIVE WORKS*/
+
+    .content .projet {
+        display: block;
+    }
+
+    .projet img {
+        width: 100%;
+        height: 50%;
+        padding: 10px 25% 10px 25%;
+    }
+
+    /*RESPONSIVE CONTACT*/
+
+    .contact {
+        display: block;
+        max-width: 100%;
+    }
+    
+    .message {
+        width: 100%;
+        height: 150px;
+        resize: none;
+        padding: 15px 5px 5px 50px;
+        margin-bottom: 10px;
+        background-position: 15px 15px;
+    }
+    .email {
+        width: 100%;
+        height: 50px;
+        resize: none;
+        padding: 5px 5px 5px 50px;
+        margin-bottom: 10px;
+        background-position: 15px 15px;
+    }
+    
+    .button {
+        width: 100%;
+        height: 50px;
+        resize: none;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+}
